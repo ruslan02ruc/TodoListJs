@@ -1,8 +1,14 @@
 import { ToDo } from "./ToDo.js"
 
-let newList = new ToDo(document.getElementById('tasks'))
+let app = new ToDo(document.getElementById('tasks'))
+app.addUser('Мои дела', 'myList')
+app.addUser('Мои дела2', 'myList2', [{name: 'web 1'}, {name: 'wed 2'}])
 
+console.log(app);
 
+document.getElementById('action').addEventListener('click', function() {
+    app.addUser(prompt('Имя пользователя'), 'key')
+})
 
 // let newList = new NoteList(document.getElementById('tasks'), 'myList', [{name: 'web 1'}, {name: 'wed 2'}])
 
