@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="app.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="container" id="app">
+            <div class="alert"></div>
+            <h1 class="list-title">Список</h1>
+            <form class="list-form" id="new-task-from">
+                <input class="list-input-btn" id="new-task-input" type="text" placeholder="text">
+                <input class="list-add-btn" id="new-task-submit" type="submit" value="Добавить" disabled>
+            </form>
+            <ul class="task-list" id="tasks">
+                <!-- <li>
+                    <input type="text" class="task-item-input" value="Bacon"  readonly="readonly">
+                    <div class="task-item-btn">
+                        <button class="list-done-btn" id="done-btn">Готово</button>
+                        <button class="list-edit-btn" id="edit-btn">Изменить</button>
+                        <button class="list-remove-btn" id="remove-btn">Удалить</button>
+                    </div>
+                </li> -->
+            </ul>
+            <div class="list-remove-all">
+                <button class="list-remove-all-btn" id="remove-all-btn">Удалить все</button>
+            </div>
+            <!-- ss -->
+            <button type="button" id="action">action</button>
+        </div>
+    </div>
+</body>
+</html>
